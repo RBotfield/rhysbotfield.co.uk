@@ -19,10 +19,12 @@ mix.postCss(`${RESOURCE_ROOT}/app.css`, PUBLIC_PATH, [require('tailwindcss')('ta
     })
 
 mix.html({
+    htmlRoot: `${RESOURCE_ROOT}/*.html`,
     output: '.',
     minify: {
         removeComments: true,
         removeRedundantAttributes: false,
+        collapseWhitespace: true,
     },
 })
 
