@@ -2,10 +2,6 @@
 @tailwind utilities;
 @tailwind components;
 
-.menu-icon {
-    @apply .text-gray-400 .fill-current .-mt-1 .w-5 .h-5 .inline .mr-1;
-}
-
 main > p {
     @apply .my-5;
 }
