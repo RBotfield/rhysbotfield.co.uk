@@ -8,8 +8,6 @@ const PUBLIC_PATH = 'build'
 mix.setPublicPath(PUBLIC_PATH)
 mix.setResourceRoot(RESOURCE_ROOT)
 
-mix.js(`${RESOURCE_ROOT}/app.js`, PUBLIC_PATH)
-
 mix.postCss(`${RESOURCE_ROOT}/app.css`, PUBLIC_PATH, [require('tailwindcss')('tailwind.config.js')])
 
 mix.html({
