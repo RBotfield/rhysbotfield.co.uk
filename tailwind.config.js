@@ -8,8 +8,14 @@ module.exports = {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
         },
+        screens: {
+            xs: '375px',
+            ...defaultTheme.screens,
+        },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/ui'),
+    ],
     purge: {
         enabled: process.env.NODE_ENV === 'production',
         defaultExtractor: (content) => content.match(/[\w-/.:_]+(?<!:)/g) || [],
