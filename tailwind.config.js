@@ -24,6 +24,7 @@ module.exports = {
         screens: {
             xs: '375px',
             ...defaultTheme.screens,
+            print: { raw: 'print' },
         },
     },
     plugins: [

@@ -8,8 +8,8 @@
 </head>
 
 <body class="bg-cool-gray-200 text-gray-700">
-  <div class="max-w-5xl xl:max-w-6xl w-100 m-4 xs:m-6 sm:m-10 flex flex-wrap md:flex-no-wrap">
-    <aside class="h-full w-full md:w-64 flex md:block shadow-md">
+  <div class="max-w-5xl xl:max-w-6xl w-100 m-4 xs:m-6 sm:m-10 print:m-0 print:max-w-none flex flex-wrap md:flex-no-wrap print:block">
+    <aside class="h-full w-full md:w-64 flex md:block shadow-md print:hidden">
       <a href="/">
         <img
         src="/img/rhysbotfield.jpg"
@@ -54,7 +54,7 @@
         </nav>
       </div>
     </aside>
-    <main class="p-5 xs:p-6 sm:py-8 sm:px-10 bg-white md:ml-10 flex-grow h-full mt-4 xs:mt-6 sm:mt-10 md:mt-0 shadow-md">
+    <main class="p-5 xs:p-6 sm:py-8 sm:px-10 print:p-0 bg-white md:ml-10 flex-grow h-full mt-4 xs:mt-6 sm:mt-10 md:mt-0 print:mt-0 shadow-md print:shadow-none">
       <block name="main"></block>
     </main>
   </div>
