@@ -11,14 +11,20 @@
     <meta property="og:type" content="profile">
 </block>
 <block name="main">
-    <div class="hidden print:flex flex-col justify-center h-screen mx-auto text-lg bg-cool-gray-200 ">
+    <!-- <div class="hidden print:flex flex-col justify-center mx-auto mb-20 text-lg bg-cool-gray-200 ">
         <h2 class="text-2xl font-bold">I <strong>do NOT</strong> give permission for my CV at rhysbotfield.co.uk to be printed or copied to another medium.</h2>
         <p>(i.e. to a recruiter's header page)</p>
         <p class="mt-5">Please use this website directly to reference my CV</p>
+    </div> -->
+    <div class="hidden print:block print:mb-6">
+        Hi, I'm Rhys, a full-stack PHP & JavaScript Developer and an expert in e-commerce, web app development, and cloud hosting/support.<br>
+        I specialise in backend PHP development, with a keen preference for Laravel and Vue.js, where I've become highly experienced in building custom progressive web app solutions for a variety of clients.<br>
+        I'm also Magento certified & have developed for over 60 different M1 & M2 websites (incl. Enterprise/Commerce).<br>
+        I'm an experienced DevOps engineer, with skills in AWS/DO/Azure, Docker, Kubernetes, Terraform, Ansible, and even just manual Linux configurations.<br>
     </div>
-    <div class="select-none print:hidden print:invisible grid grid-cols-1 lg:grid-cols-2 gap-12 print:block" oncontextmenu="return false" aria-hidden="true">
+    <div class="select-none grid grid-cols-1 lg:grid-cols-2 gap-12 print:block" oncontextmenu="return false" aria-hidden="true">
         <div class="space-y-10 print:space-y-5">
-            <section class="space-y-4 lg:space-y-6 print:space-y-2">
+            <section class="space-y-4 lg:space-y-6 ">
                 <header class="-mb-2 lg:-mb-3">
                     <h2 class="text-gray-500 font-bold uppercase tracking-widest">Experience</h2>
                 </header>
@@ -74,7 +80,7 @@
                         <span>Limesharp Internet</span>
                         <span class="bg-gray-200 px-2 py-1 ml-4 text-xs font-bold text-gray-600 leading-tight uppercase">Contract</span>
                     </h3>
-                    <p class="flex items-center justify-between mb-2 print:mb-1 text-sm text-gray-400 font-bold uppercase tracking-wider">
+                    <p class="flex items-center justify-between print:justify-start mb-2 print:mb-1 text-sm text-gray-400 font-bold uppercase tracking-wider">
                         <span class="inline-block">Magento Developer</span>
                         <span class="inline-block mx-2">|</span>
                         <span class="inline-block">Nov 2019 – Mar 2020</span>
@@ -159,7 +165,7 @@
                 </article>
             </section>
 
-            <section class="space-y-4 lg:space-y-6 print:space-y-2">
+            <section class="space-y-4 lg:space-y-6 print:hidden">
                 <header class="-mb-2 lg:-mb-3">
                     <h2 class="text-gray-500 font-bold uppercase tracking-widest">Projects</h2>
                 </header>
@@ -200,7 +206,7 @@
                 </article>
             </section>
         </div>
-        <div class="space-y-10 print:mt-8 print:space-y-5">
+        <div class="space-y-10 print:mt-6 print:space-y-5">
             <section class="space-y-4 lg:space-y-6 print:space-y-2">
                 <header class="-mb-2 lg:-mb-3">
                     <h2 class="text-gray-500 font-bold uppercase tracking-widest">Skills</h2>
@@ -212,7 +218,7 @@
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">PHP7/8</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Laravel</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Lumen</li>
-                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Magento</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Magento 1 & 2</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Sylius</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Symfony</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Shopware</li>
@@ -222,8 +228,10 @@
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">MySQL</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">PostgreSQL</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">PHPUnit</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Pest</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Xdebug</li>
-                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">ElasticSearch</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Blackfire</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">ElasticSearch/OpenSearch</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Redis</li>
                     </ul>
                 </article>
@@ -232,11 +240,19 @@
                     <ul class="flex flex-wrap items-start -mx-2">
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Vue.js</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Vuex</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Nuxt.js</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">React.js</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Redux</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">React Native</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Next.js</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Alpine.js</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">NativeScript</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Livewire</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Inertia JS</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">jQuery</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">ES6+</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">ESLint</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Vite</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Webpack</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Grunt</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Gulp</li>
@@ -247,9 +263,10 @@
                     <h3 class="mb-4 text-lg text-gray-600 font-bold leading-5">DevOps</h3>
                     <ul class="flex flex-wrap items-start -mx-2">
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Linux</li>
-                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Bash Scripts</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Bash/Zsh Scripting</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Docker</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Kubernetes</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Alpine Linux</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Nginx</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Apache</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Algolia</li>
@@ -258,9 +275,13 @@
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Digital Ocean</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Serverless</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Lambda</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Laravel Vapor</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Terraform</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Ansible</li>
-                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Blackfire</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Github Actions</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Bitbucket Pipelines</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">CircleCI</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Jenkins</li>
                     </ul>
                 </article>
                 <article>
@@ -273,12 +294,13 @@
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">PurgeCSS</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Figma</li>
                         <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">Typography</li>
+                        <li class="bg-gray-200 px-2 mb-2 mx-1 text-sm font-medium text-gray-700 leading-loose">PWA</li>
                     </ul>
                 </article>
 
             </section>
 
-            <section class="space-y-4 lg:space-y-6 print:space-y-2">
+            <section class="space-y-4 lg:space-y-6 print:space-y-2 print:hidden">
                 <header class="-mb-2 lg:-mb-3">
                     <h2 class="text-gray-500 font-bold uppercase tracking-widest">Clients</h2>
                 </header>

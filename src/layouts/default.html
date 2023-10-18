@@ -7,20 +7,26 @@
   <block name="head"></block>
 </head>
 
-<body class="bg-cool-gray-200 text-gray-700">
+<body class="bg-cool-gray-200 print:bg-transparent text-gray-700">
   <div class="max-w-5xl xl:max-w-6xl w-100 m-4 xs:m-6 sm:m-10 print:m-0 print:max-w-none flex flex-wrap md:flex-no-wrap print:block">
-    <aside class="h-full w-full md:w-64 flex md:block shadow-md print:hidden">
+    <aside class="h-full w-full md:w-64 flex md:block shadow-md">
       <a href="/">
         <img
         src="/img/rhysbotfield.jpg"
         alt="Rhys Botfield"
-        class="object-top object-cover shadow-inner max-w-screen-sm md:max-w-none h-full md:h-64 w-40 xs:w-48 sm:w-56 md:w-64 mx-auto md:mx-0">
+        class="object-top object-cover shadow-inner max-w-screen-sm md:max-w-none h-full md:h-64 w-40 xs:w-48 sm:w-56 md:w-64 mx-auto md:mx-0 print:hidden">
       </a>
-      <div class="p-3 xs:p-5 flex-grow bg-white">
-        <a href="/" class="text-xl">Rhys Botfield</a>
-        <div class="text-gray-500">Full-Stack Developer</div>
-        <hr class="my-3 md:my-5">
-        <nav class="md:mt-0">
+      <div class="p-3 xs:p-5 flex-grow bg-white print:p-0 print:mb-5 print:flex print:justify-between" >
+        <div>
+          <a href="/" class="text-xl">Rhys Botfield</a>
+          <div class="text-gray-500">Full-Stack Developer</div>
+        </div>
+        <div class="hidden print:block text-right">
+          <div>Tel: <a href="tel:+447935744018">07935744018</a></div>
+          <div>Email: <a href="mailto:rhys@sproutdesk.co.uk">rhys@sproutdesk.co.uk</a></div>
+        </div>
+        <hr class="my-3 md:my-5 print:hidden">
+        <nav class="md:mt-0 print:hidden">
           <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 space-y-1 md:space-y-3">
             <li class="mt-1 md:mt-0"><a class="group" href="/cv.html">
               <svg class="text-gray-400 fill-current -mt-1 w-5 h-5 inline mr-1 group-hover:text-gray-600" viewBox="0 0 20 20"><title>CV</title><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
